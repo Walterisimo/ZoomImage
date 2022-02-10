@@ -1,0 +1,33 @@
+.content{
+  height: 100vh;
+}
+#section1{
+  background-color: blueviolet;
+}
+#section2{
+  background-color: red;
+}
+#section3{
+  background-color: rebeccapurple;
+}
+#section4{
+  background-color: blue;
+}
+#section5{
+  background-color: green;
+}
+#section6{
+  background-color: greenyellow;
+}
+
+.image{
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  transform: scale(1);
+  transition: transform 3s cubic-bezier(.23,1,.32,1);
+}
+.content.active .image{
+  transform: scale(1.1);
+  transition: transform 3s cubic-bezier(.23,1,.32,1);
+}
